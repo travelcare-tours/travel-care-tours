@@ -3,6 +3,8 @@ import { GitContentSource } from "@stackbit/cms-git";
 
 export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
+  ssgName: "custom",
+  devCommand: "npm run dev -- --port {PORT}",
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
@@ -43,8 +45,7 @@ export default defineStackbitConfig({
             { name: "title", type: "string" },
             { name: "description", type: "string", controlType: "textarea" },
             { name: "duration", type: "string" },
-            { name: "priceLabel", type: "string" },
-            { name: "image", type: "image" }
+            { name: "priceLabel", type: "string" }
           ]
         },
         {
@@ -54,8 +55,7 @@ export default defineStackbitConfig({
           fields: [
             { name: "slug", type: "string" },
             { name: "name", type: "string" },
-            { name: "tagline", type: "string" },
-            { name: "image", type: "image" }
+            { name: "tagline", type: "string" }
           ]
         }
       ],
