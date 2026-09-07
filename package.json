@@ -1,0 +1,12 @@
+{
+  "name": "travel-care-tours",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "python3 -m http.server 8888"
+  },
+  "devDependencies": {
+    "@stackbit/types": "latest",
+    "@stackbit/cms-git": "latest"
+  }
+}
