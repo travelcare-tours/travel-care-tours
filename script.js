@@ -82,3 +82,9 @@ document.getElementById("enquiryForm")?.addEventListener("submit", (e) => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Load the editable content bridge used by Netlify Visual Editor.
+const visualEditorScript = document.createElement("script");
+visualEditorScript.src = "/editor.js";
+visualEditorScript.defer = true;
+document.head.appendChild(visualEditorScript);
